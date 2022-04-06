@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <title>Image to ASCII Converter</title>
+    </head>
+    <body>
+        <div class="backgroundWave"></div>
+        <div class="fileInputDiv">
+            <label class="fileInput" for="upload-image">Upload</label>
+            <input id="upload-image" type="file" accept="image/*" />
+        </div>
+        <div class="wavesDiv">
+            <img src="/assets/layered-waves.svg" class="svg-waves" />
+        </div>
+        <div class="pinkPart">
+            <h1 class="imgPreviewText">Image</h1>
+            <canvas class="imgCanvas"></canvas>
+            <h1 class="asciiPreviewText">Result</h1>
+            <pre class="asciiPreview"></pre>
+        </div>
+
+        <script src="/src/app.ts" type="module"></script>
+    </body>
+</html>

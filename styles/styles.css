@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #001220;
+    margin: 0;
+    padding: 0;
+}
+
+.fileInputDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vmin;
+}
+
+#upload-image {
+    display: none;
+}
+
+.fileInput {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2vmin;
+    border-radius: 20px;
+    background-color: hsl(342, 75%, 53%);
+    font-size: 2em;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+}
+
+.fileInput:hover {
+    -webkit-box-shadow: -2px 9px 24px 9px hsla(342, 75%, 63%, 0.31);
+    box-shadow: 0px 0px 24px 9px hsla(342, 75%, 63%, 0.31);
+    padding: 2.5vmin;
+}
+
+.wavesDiv {
+    box-sizing: border-box;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.svg-waves {
+    min-width: 100vw;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+
+.pinkPart * {
+    font-size: 3em;
+}
+
+.pinkPart {
+    box-sizing: border-box;
+    background-color: #c62368;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-5px);
+
+    display: grid;
+    place-items: center;
+}
+
+.imgPreviewText {
+    margin-top: 20vh;
+    margin-bottom: 1em;
+}
+
+.asciiPreviewText {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.asciiPreview {
+    font-weight: normal;
+    font-size: 0.8vmin;
+    font-family: "Courier New", Courier, monospace;
+}
